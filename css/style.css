@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+html, body {
+  height: 100%;
+  background-color: #fafffa;
+}
+
+.header-container, .footer-container {
+  position: relative;
+  transition: 1s;
+  right: -1600px;
+  max-width: 1400px;
+}
+
+/* FLEX-BOX */
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-item {
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  height: 67px;
+}
+
+header img {
+  height: 93%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  display: inline-block;
+}
+
+/* logo */
+.logo {
+  position: relative;
+  display: inline-block;
+  background-color: #FFAC1E;
+  align-items: center;
+  height: 67px;
+  width: 220px;
+}
+
+#text-logo {
+  position: relative;
+  left: -20px;
+}
+
+/* navigation */
+.links {
+  margin-right: 30px;
+}
+.links a {
+  color: #000;
+  font-family: 'Varela Round', sans-serif;;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+}
+
+.links p {
+  display: inline;
+}
+
+.links a:hover {
+  color: #FFAC1E;
+  border-bottom: 3px solid #FFAC1E;
+}
+
+/* HERO IMAGES AND TEXT */
+.hero-container {
+  height: calc(100vh - 142px);
+}
+
+div[class*="photo-frame"] {
+  position: relative;
+  height: 80%;
+  width: 33.3%;
+}
+
+.photo-frame-one{
+  top: 10.1%;
+}
+
+.photo-frame-two{
+  bottom: 10%;
+}
+
+img[class*="hero-photo"] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text{
+  width: 33.3%;
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1%;
+}
+
+.hero-text ul {
+  margin-top: 10%;
+  list-style: none;
+  text-align: left;
+}
+
+.hero-text ul li {
+  font-size: 1.2em;
+}
+
+.hero-text ul li p {
+  display: inline-block;
+  }
+
+.fa-leaf, .fa-seedling {
+  color: #1FC11F;
+}
+
+.fa-hammer, .fa-pen-to-square {
+  color: #FFAC1E;
+}
+
+.hero-photo-one{
+  border-width: 4px 4px 0 0;
+  border-style: solid;
+  border-color: #FFAC1E;
+  border-radius: 20% 50% 10% 0;
+}
+
+.hero-photo-two{
+  border-width: 0 0 4px 4px;
+  border-style: solid;
+  border-color: #FFAC1E;
+  border-radius: 10% 0% 20% 50%;
+}
+
+/* FOOTER */
+.footer-container {
+  align-items: center;
+  height: 67px;
+}
+
+.contact {
+  margin-left: 30px;
+}
+
+footer span {
+  margin-right: 20px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.logo-footer {
+  position: relative;
+  display: inline-block;
+  background-color: #FFAC1E;
+  align-items: center;
+  height: 67px;
+  width: 220px;
+}
+
+footer img {
+  height: 93%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* UNDERLINES */
+div[class*="underline"]{
+  height: 4px;
+  background-color: #FFAC1E;
+}
+
+.underline-top {
+  margin-left: calc((100vw - 1400px) / 2);
+}
+
+.underline-bottom {
+  margin-right: calc((100vw - 1400px) / 2);
+}
+
+/* MEDIA */
+@media (max-width: 1400px) {
+
+  .underline-top {
+    margin-left: 0;
+  }
+
+  .underline-bottom {
+    margin-right: 0;
+  }
+}
+
+/* JS Animation */
+
+.rigt {
+  position: relative;
+  max-width: 1400px;
+}
