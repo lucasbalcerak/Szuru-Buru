@@ -211,9 +211,3 @@ div[class*="underline"]{
   }
 }
 
-/* JS Animation */
-
-.rigt {
-  position: relative;
-  max-width: 1400px;
-}
