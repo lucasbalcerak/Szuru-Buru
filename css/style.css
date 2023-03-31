@@ -14,7 +14,6 @@ html, body {
 .header-container, .footer-container {
   position: relative;
   transition: 1s;
-  right: -1600px;
   max-width: 1400px;
 }
 
