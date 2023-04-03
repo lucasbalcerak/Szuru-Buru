@@ -210,3 +210,85 @@ div[class*="underline"]{
   }
 }
 
+.product {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 0.8em;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.welcome_product {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+}
+
+.welcome_product ul {
+  margin-left: 10%;
+}
+
+.fa-circle-info{
+  color: #FFAC1E;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  font-size: 5em;
+  float: left;
+}
+
+.info-text {
+  margin-bottom: 1%;
+  text-align: justify;
+}
+
+.product img {
+  object-fit: cover;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  width: 200px;
+  height: 300px;
+  border-style: solid;
+  border-color: #FFAC1E;
+  border-radius: 15%;
+}
+
+.img-right {
+  float: right;
+  margin-left: 4%;
+  margin-right: 0%;
+}
+
+.img-left {
+  float: left;
+  margin-left: 0%;
+  margin-right: 4%;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.palma {
+  flex: 1;
+  text-align: justify;
+  margin-right: 2.5%;
+  font-size: 1.2em;
+}
+
+.palma h3 {
+  font-size: 1.5em;
+}
+
+.kokos {
+  flex: 1;
+  text-align: justify;
+  margin-left: 2.5%;
+  font-size: 1.2em;
+}
+
+.kokos h3 {
+  font-size: 1.5em;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
