@@ -213,26 +213,37 @@ div[class*="underline"]{
 .product {
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 0.8em;
+  font-size: 1em;
   font-family: 'Varela Round', sans-serif;
 }
 
-.welcome_product {
+.info-product {
+  position: absolute;
+  display: none;
+  top: 12%;
+  left: 0%;
+  background-color: #fff;
+  border: solid 4px #FFAC1E;
   margin-left: 25%;
   margin-right: 25%;
-  margin-top: 5%;
 }
 
-.welcome_product ul {
+.info-modal {
+  padding: 5%;
+}
+
+.info-product ul {
   margin-left: 10%;
 }
 
 .fa-circle-info{
+  cursor: pointer;
+  bottom: 15%;
+  left: calc(50% - 32px);
+  position: absolute;
+  visibility: visible;
   color: #FFAC1E;
-  margin-right: 2%;
-  margin-bottom: 2%;
   font-size: 5em;
-  float: left;
 }
 
 .info-text {
