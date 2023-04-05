@@ -5,19 +5,29 @@ $(document).ready(function() {
         if($('.info-product').is(":hidden")){
             $('.info-product').show();
             $('.product').addClass('opacity');
+            $('.img-left').addClass('disabled');
+            $('.img-right').addClass('disabled');
         } else {
             $('.info-product').hide();
             $('.product').removeClass('opacity');
+            $('.img-left').removeClass('disabled');
+            $('.img-right').removeClass('disabled');
         }
         
     })
 
     $('.img-left').on('click', function(){
         $('.site-cover').removeClass("none");
+        $('.big-image').removeClass('none');
+        console.log('lewy');
+        $('#big-img-left-photo').removeClass('none');
     })
 
     $('.img-right').on('click', function(){
         $('.site-cover').removeClass('none');
+        $('.big-image').removeClass('none');
+        console.log('prawy');
+        $('#big-img-right-photo').removeClass('none');
     })
 });
 
@@ -27,6 +37,18 @@ $(document).click(function(event){
     event.target.id != 'info-icon') {
         $('.info-product').hide();
         $('.product').removeClass('opacity');
+        $('.img-left').removeClass('disabled');
+        $('.img-right').removeClass('disabled');
+    }
+
+    if(event.target.class != 'gallery' &&
+    $('.gallery').find(event.target).length === 0 &&
+    event.target.id != 'big-img-left' &&
+    event.target.id != 'big-img-right') {
+        $('.site-cover').addClass('none');
+        $('.big-image').addClass('none');
+        $('#big-img-left-photo').addClass('none');
+        $('#big-img-right-photo').addClass('none');
     }
 })
 
