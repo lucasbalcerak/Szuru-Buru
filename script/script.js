@@ -4,14 +4,20 @@ $(document).ready(function() {
     $('#info-icon').on('click', function(){
         if($('.info-product').is(":hidden")){
             $('.info-product').show();
-            $('.palma').css('opacity', '0.5');
-            $('.kokos').css('opacity', '0.5');
+            $('.product').addClass('opacity');
         } else {
             $('.info-product').hide();
-            $('.palma').css('opacity', '1');
-            $('.kokos').css('opacity', '1');
+            $('.product').removeClass('opacity');
         }
         
+    })
+
+    $('.img-left').on('click', function(){
+        $('.site-cover').removeClass("none");
+    })
+
+    $('.img-right').on('click', function(){
+        $('.site-cover').removeClass('none');
     })
 });
 
@@ -20,7 +26,7 @@ $(document).click(function(event){
     $('.info-product').find(event.target).length === 0 &&
     event.target.id != 'info-icon') {
         $('.info-product').hide();
-        $('.palma').css('opacity', '1');
-        $('.kokos').css('opacity', '1');
+        $('.product').removeClass('opacity');
     }
 })
+

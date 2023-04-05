@@ -86,6 +86,7 @@ nav {
 /* HERO IMAGES AND TEXT */
 .hero-container {
   height: calc(100vh - 142px);
+  max-width: 1400px;
 }
 
 div[class*="photo-frame"] {
@@ -178,7 +179,7 @@ footer span {
 
 footer img {
   height: 93%;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -211,10 +212,9 @@ div[class*="underline"]{
 }
 
 .product {
-  margin-left: 5%;
-  margin-right: 5%;
   font-size: 1em;
   font-family: 'Varela Round', sans-serif;
+  transition: 1s;
 }
 
 .info-product {
@@ -239,7 +239,7 @@ div[class*="underline"]{
 .fa-circle-info{
   cursor: pointer;
   bottom: 15%;
-  left: calc(50% - 32px);
+  left: calc(50% - 40px);
   position: absolute;
   visibility: visible;
   color: #FFAC1E;
@@ -260,6 +260,10 @@ div[class*="underline"]{
   border-style: solid;
   border-color: #FFAC1E;
   border-radius: 15%;
+}
+
+.product img:hover {
+  cursor: zoom-in;
 }
 
 .img-right {
@@ -287,6 +291,7 @@ div[class*="underline"]{
 
 .palma h3 {
   font-size: 1.5em;
+  margin-bottom: 1.5%;
 }
 
 .kokos {
@@ -298,8 +303,32 @@ div[class*="underline"]{
 
 .kokos h3 {
   font-size: 1.5em;
+  margin-bottom: 1.5%;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.site-cover {
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.none {
+  display: none;
+}
+
+.disabled{
+  pointer-events: none;
+}
+
+.opacity {
+  opacity: 0.5;
+  transition: 1s;
 }
