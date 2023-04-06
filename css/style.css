@@ -12,8 +12,6 @@ html, body {
 }
 
 .header-container, .footer-container {
-  position: relative;
-  transition: 1s;
   max-width: 1400px;
 }
 
@@ -210,3 +208,53 @@ div[class*="underline"]{
   }
 }
 
+
+/* ABOUT US */
+
+.lukasz {
+  flex: 1;
+  margin-left: 5%;
+  margin-right: 2%;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.lukasz img, .ewa img {
+  object-fit: cover;
+  float: left;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  margin-left: 0%;
+  margin-right: 4%;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: #FFAC1E;
+  border-radius: 15%;
+}
+
+.lukasz h3, .ewa h3 {
+  margin-bottom: 2%;
+  font-size: 2em;
+}
+
+.lukasz h5, .ewa h5 {
+  margin-bottom: 2%;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.lukasz p, .ewa p {
+  margin-bottom: 2%;
+  text-align: justify;
+}
+
+.lukasz .motto, .ewa .motoo {
+  font-style: italic;
+}
+
+.ewa {
+  flex: 1;
+  margin-left: 2%;
+  margin-right: 5%;
+  font-family: 'Varela Round', sans-serif;
+}
