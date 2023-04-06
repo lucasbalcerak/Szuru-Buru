@@ -19,14 +19,12 @@ $(document).ready(function() {
     $('.img-left').on('click', function(){
         $('.site-cover').removeClass("none");
         $('.big-image').removeClass('none');
-        console.log('lewy');
         $('#big-img-left-photo').removeClass('none');
     })
 
     $('.img-right').on('click', function(){
         $('.site-cover').removeClass('none');
         $('.big-image').removeClass('none');
-        console.log('prawy');
         $('#big-img-right-photo').removeClass('none');
     })
 });
@@ -51,4 +49,6 @@ $(document).click(function(event){
         $('#big-img-right-photo').addClass('none');
     }
 })
+
+
 
