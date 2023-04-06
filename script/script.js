@@ -49,6 +49,3 @@ $(document).click(function(event){
         $('#big-img-right-photo').addClass('none');
     }
 })
-
-
-
