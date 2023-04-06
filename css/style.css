@@ -84,6 +84,7 @@ nav {
 /* HERO IMAGES AND TEXT */
 .hero-container {
   height: calc(100vh - 142px);
+  max-width: 1400px;
 }
 
 div[class*="photo-frame"] {
@@ -176,7 +177,7 @@ footer span {
 
 footer img {
   height: 93%;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -354,6 +355,21 @@ textarea {
   cursor: pointer;
   font-size: 36px;
   color: #FFAC1E;
+.product {
+  font-size: 1em;
+  font-family: 'Varela Round', sans-serif;
+  transition: 1s;
+}
+
+.info-product {
+  position: absolute;
+  display: none;
+  top: 12%;
+  left: 0%;
+  background-color: #fff;
+  border: solid 4px #FFAC1E;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .info-modal {
@@ -373,4 +389,44 @@ textarea {
 .none {
   z-index: -1;
   opacity: 0;
+}
+
+.big-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery {
+  border: solid black 4px;
+  max-height: 600px;
+  max-width: 600px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.gallery img {
+  max-height: 600px;
+  max-width: 600px;
+}
+
+.gallery-menu {
+  color: #FFAC1E;
+}
+
+.none {
+  display: none;
+}
+
+.disabled{
+  pointer-events: none;
+}
+
+.opacity {
+  opacity: 0.5;
+  transition: 1s;
 }
