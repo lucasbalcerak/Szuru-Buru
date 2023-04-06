@@ -355,6 +355,8 @@ textarea {
   cursor: pointer;
   font-size: 36px;
   color: #FFAC1E;
+}
+
 .product {
   font-size: 1em;
   font-family: 'Varela Round', sans-serif;
@@ -375,6 +377,80 @@ textarea {
 .info-modal {
   padding: 5%;
 }
+
+.fa-circle-info{
+  cursor: pointer;
+  bottom: 15%;
+  left: calc(50% - 40px);
+  position: absolute;
+  visibility: visible;
+  color: #FFAC1E;
+  font-size: 5em;
+}
+
+.info-text {
+  margin-bottom: 1%;
+  text-align: justify;
+}
+
+.product img {
+  object-fit: cover;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  width: 200px;
+  height: 300px;
+  border: solid #FFAC1E 4px;
+  border-radius: 50px;
+}
+
+.product img:hover {
+  cursor: zoom-in;
+}
+
+.img-right {
+  float: right;
+  margin-left: 4%;
+  margin-right: 0%;
+}
+
+.img-left {
+  float: left;
+  margin-left: 0%;
+  margin-right: 4%;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.palma {
+  flex: 1;
+  text-align: justify;
+  margin-right: 2.5%;
+  font-size: 1.2em;
+}
+
+.palma h3 {
+  font-size: 1.5em;
+  margin-bottom: 1.5%;
+}
+
+.kokos {
+  flex: 1;
+  text-align: justify;
+  margin-left: 2.5%;
+  font-size: 1.2em;
+}
+
+.kokos h3 {
+  font-size: 1.5em;
+  margin-bottom: 1.5%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 
 .site-cover {
   position: absolute;

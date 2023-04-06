@@ -8,7 +8,6 @@ $(document).ready(function() {
     else {
         $('#lukaszdiv').css('height', ewaDiv + "px");
         }
-    });
     
     $('#send').on('click', function(){
         if($('.modal').hasClass('none')){
