@@ -70,6 +70,8 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   padding-bottom: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .links p {
@@ -83,6 +85,10 @@ nav {
 
 /* HERO IMAGES AND TEXT */
 .hero-container {
+  height: calc(100vh - 142px);
+}
+
+.container {
   height: calc(100vh - 142px);
   max-width: 1400px;
 }
@@ -297,6 +303,10 @@ form{
   line-height: 26px;
 }
 
+.last-input-text{
+  margin-bottom: 10%;
+}
+
 .input-text:focus, textarea:focus {
   outline: none;
 }
@@ -494,7 +504,7 @@ textarea {
   color: #FFAC1E;
 }
 
-.none {
+.display-none {
   display: none;
 }
 
@@ -505,4 +515,12 @@ textarea {
 .opacity {
   opacity: 0.5;
   transition: 1s;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: #000;
 }
