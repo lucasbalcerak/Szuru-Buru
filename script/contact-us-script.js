@@ -5,9 +5,9 @@ $(document).ready(function() {
         var emailValue = $('#email').val();
         var textValue = $('#text').val();
 
-        console.log(nameValue != "");
-        console.log(emailValue);
-        console.log(textValue);
+        var pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+
+        console.log(pattern.test(emailValue));
 
         if(nameValue === "" && $('#name-req').hasClass('none')) {
             $('#name-req').removeClass('none');
@@ -15,7 +15,7 @@ $(document).ready(function() {
             $('#name-req').addClass('none');
         }
 
-        if(emailValue === "" && $('#email-req').hasClass('none')) {
+        if(!pattern.test(emailValue)) {
             $('#email-req').removeClass('none');
         } else {
             $('#email-req').addClass('none');
@@ -23,8 +23,9 @@ $(document).ready(function() {
 
         if($('.modal').hasClass('none') && 
         nameValue != "" &&
-        emailValue != "" &&
+        pattern.test(emailValue) &&
         textValue != "" ){
+            console.log("Cps");
             $('.modal').removeClass('none');
             $('.site-cover').removeClass('none');
         }        
