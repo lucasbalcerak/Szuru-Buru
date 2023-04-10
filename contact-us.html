@@ -1,7 +1,7 @@
     <!DOCTYPE html>
 <html lang="pl" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="image/icon.png">
     <script src="https://kit.fontawesome.com/c645a9079e.js" crossorigin="anonymous"></script>
@@ -39,22 +39,44 @@
             </h1>
             <div>
                 <form action="">
-                    <label for="name" class="label"></label>
-                    <input class="input-text" type="text" placeholder="Imię" name="name" id="">
-                    <label for="" class="label"></label>
-                    <input class="input-text last-input-text type="text" placeholder="E-mail">  
-                    <textarea name="" id="" placeholder="O co chcesz nas zapytać ?" cols="30" rows="5"></textarea>
+                    <label for="name"
+                      class="label"></label>
+                    <input class="input-text" 
+                      type="text" 
+                      placeholder="Imię" 
+                      name="name"
+                      id="name"
+                      required
+                      />
+                    <span class="validation-info none" id="name-req">* Podaj imię</span>
+                    <label for="email" 
+                      class="label"></label>
+                    <input class="input-text last-input-text"
+                      type="email" 
+                      placeholder="E-mail" 
+                      name="email"
+                      id="email"
+                      required
+                      />
+                      <span class="validation-info none" id="email-req">* Podaj swój adres email np. jan@przykład.pl</span>  
+                    <textarea name="content" 
+                      placeholder="O co chcesz nas zapytać ?" 
+                      cols="30" 
+                      rows="5"
+                      id="text"
+                      required
+                      ></textarea>
+                    <input type="submit" 
+                      class="btn-send"
+                      id="send"
+                      value="Wyślij"/>
                 </form>
             </div>
-            <button class="btn-send" id="send">
-                Wyślij
-            </button>
         </div>
     </div>
     <div class="modal none">
         <div class="info-modal">
-            <h2>
-                Dziękujemy za wiadomość
+            <h2 id="thanks-h2">
             </h2>
             <p>
                 Skontaktujemy się mailowo z tobą najszybciej jak to możliwe.    
