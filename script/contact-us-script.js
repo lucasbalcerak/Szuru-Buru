@@ -40,6 +40,9 @@ $(document).ready(function(e) {
         if(!$('.modal').hasClass('none')){
             $('.modal').addClass('none');
             $('.site-cover').addClass('none');
+            $('#name').val("");
+            $('#email').val("");
+            $('#text').val("");
         }        
     })
 });
