@@ -2,6 +2,7 @@
 <html lang="pl" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="image/icon.png">
     <script src="https://kit.fontawesome.com/c645a9079e.js" crossorigin="anonymous"></script>
@@ -18,12 +19,25 @@
           </a>
         </div>
         <nav class="flex-item">
+          <input type="checkbox" id="hamburger"/>
+          <label class="menuicon" for="hamburger">
+          <span class="display-none"><i class="fa-solid fa-bars"></i></span>
+          </label>
           <div class="links">
-            <a href="about-us.html">O nas</a>
-            <p>|</p>
-            <a href="product-page.html">Produkty</a>
-            <p>|</p>
-            <a href="contact-us.html">Kontakt</a>
+            <ul>
+              <li id="first-link">
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about-us.html">O nas</a>
+              </li>
+              <li>
+                <a href="product-page.html">Produkty</a>
+              </li>
+              <li>
+                <a href="contact-us.html">Kontakt</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
