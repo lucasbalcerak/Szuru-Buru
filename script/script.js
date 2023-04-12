@@ -8,4 +8,13 @@ $(document).ready(function() {
     else {
         $('#lukaszdiv').css('height', ewaDiv + "px");
         }
+
+    $('#hamburger-menu').on('click', function(){
+        console.log("jestem tutaj");
+        $('.links').removeClass('display-none'); 
+    }) 
+
+    $('#hamburger-menu-close').on('click', function(){
+        $('.links').addClass('display-none');
+    })
 });
