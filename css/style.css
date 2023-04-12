@@ -111,7 +111,7 @@ div[class*="photo-frame"] {
 
 .photo-frame-one{
   margin-top: auto;
-  top: 0.5%;
+  top: 0.6%;
 }
 
 .photo-frame-two{
@@ -535,7 +535,6 @@ textarea {
   }
 
   .hero-container {
-    display: none;
   }
 
   .footer-container {
@@ -549,9 +548,10 @@ textarea {
   .links {  
     display: block;
     position: relative;
+    top: -175px;
     margin: 0 auto;
     height: 100%;
-    transition: 1s;
+    z-index: 1;
   }
 
   .links ul {
@@ -614,6 +614,18 @@ textarea {
     display: none;
   }
 
+}
+
+/* ANIMATIONS */
+/* Nav animation */
+.nav-in {
+  transition: 1s;
+  transform: translateY(175px);
+}
+
+.nav-out {
+  transition: 1s;
+  transform: translateY(-175px);
 }
 
 /* SITE COVER AND ON / OFF ELEMENTS */

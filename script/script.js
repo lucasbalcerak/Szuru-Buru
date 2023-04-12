@@ -8,13 +8,27 @@ $(document).ready(function() {
     else {
         $('#lukaszdiv').css('height', ewaDiv + "px");
         }
+    
+    if($(window).width() < 576)
+    {
+        $('.links').addClass('none');
+    } else {
+        $('.links').removeClass('none');
+    }
 
     $('#hamburger-menu').on('click', function(){
-        console.log("jestem tutaj");
-        $('.links').removeClass('display-none'); 
+        $('.links').removeClass('nav-out');
+        $('.links').removeClass('none');
+        setTimeout(function() {
+            $('.links').addClass('nav-in');  
+        }, 100)
     }) 
 
     $('#hamburger-menu-close').on('click', function(){
-        $('.links').addClass('display-none');
+        $('.links').removeClass('nav-in');
+        $('.links').addClass('nav-out');
+        setTimeout(function() {
+            $('.links').addClass('none');  
+        }, 1000)
     })
 });
