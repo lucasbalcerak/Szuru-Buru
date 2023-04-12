@@ -12,8 +12,10 @@ $(document).ready(function() {
     if($(window).width() < 576)
     {
         $('.links').addClass('none');
+        $('.logo-footer').addClass('display-none');
     } else {
         $('.links').removeClass('none');
+        $('.logo-footer').removeClass('display-none');
     }
 
     $('#hamburger-menu').on('click', function(){

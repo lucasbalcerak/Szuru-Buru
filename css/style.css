@@ -179,6 +179,10 @@ img[class*="hero-photo"] {
   margin-left: 30px;
 }
 
+.contact div {
+  display: inline;
+}
+
 footer span {
   margin-right: 20px;
   font-family: 'Varela Round', sans-serif;
@@ -535,10 +539,17 @@ textarea {
   }
 
   .hero-container {
+
   }
 
   .footer-container {
-    display: none;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFAC1E;
+    border-top: 2px solid black;
+    height: 80px;
   }
 
   .logo {
@@ -605,9 +616,68 @@ textarea {
     margin: 0 auto;
   }
 
+  .hero-container {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .hero-text {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .hero-text ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  div[class*="photo-frame"] {
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: none;
+  }
+
+  .photo-frame-one {
+    margin-top: 50px;
+  }
+
+  .photo-frame-two {
+    margin-bottom: 50px;
+  }
+
+  .photo-frame-one img {
+    margin-bottom: 50px;
+  }
+
+  .hero-photo-one, .hero-photo-two {
+    border-width: 4px 4px 4px 4px;
+    border-radius: 30%;
+  }
+
+  .contact div {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
   div[class*="underline"]{
     background-color: #000;
     height: 2px;
+  }
+
+  .underline-top {
+    margin-left: 0;
+    width: 100%;
   }
 
   .underline-bottom {
