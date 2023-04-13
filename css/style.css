@@ -670,6 +670,26 @@ textarea {
     padding-bottom: 5px;
   }
 
+  /* ABOUT US */
+
+  .lukasz, .ewa {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+  }
+
+  .lukasz {
+    margin-top: 50px;
+  }
+
+  .ewa {
+    margin-bottom: 50px;
+  }
+
+  .lukasz img, .ewa img {
+    float: none;
+  }
+
   div[class*="underline"]{
     background-color: #000;
     height: 2px;
