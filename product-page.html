@@ -2,6 +2,7 @@
 <html lang="pl" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="image/icon.png">
     <script src="https://kit.fontawesome.com/c645a9079e.js" crossorigin="anonymous"></script>
@@ -20,12 +21,28 @@
           </a>
         </div>
         <nav class="flex-item">
+          <label class="menuicon" for="hamburger">
+          <span id="hamburger-menu" class="display-none">
+            <i class="fa-solid fa-bars"></i></span>
+          </label>
           <div class="links">
-            <a href="about-us.html">O nas</a>
-            <p>|</p>
-            <a href="product-page.html">Produkty</a>
-            <p>|</p>
-            <a href="contact-us.html">Kontakt</a>
+            <ul>
+              <li id="first-link">
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about-us.html">O nas</a>
+              </li>
+              <li>
+                <a href="product-page.html">Produkty</a>
+              </li>
+              <li>
+                <a href="contact-us.html">Kontakt</a>
+              </li>
+            </ul>
+            <span id="hamburger-menu-close" class="display-none">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
           </div>
         </nav>
       </div>
@@ -33,7 +50,7 @@
     <div class="underline-top">
     </div>
     <div class="container flex-container">
-        <div class="product flex-container flex-wrap">
+        <div class="product hero-container flex-container flex-wrap">
             <div class="palma">
                 <img class="img-left" id='big-img-left' src="image/drapaki/Palma.png" alt="">
                 <h3>
@@ -60,7 +77,7 @@
             <i class="fa-solid fa-circle-info" id="info-icon"></i>
         </div>
     </div>
-    <div class="info-product">
+    <div class="info-product none">
         <div class="info-modal">
             <p class="info-text">
                 Drapaki produkujemy tylko i wyłącznie z naturalnych materiałów na zamówienie klienta. Osobiście dbamy o jego wykonanie tak aby zapewnić bezpieczeństwo i satysfakcje Twojego konia.
@@ -89,16 +106,20 @@
     <footer>
       <div class="footer-container flex-container">
         <div class="contact flex-item">
-          <i class="fa-solid fa-envelope"></i>
-          <span>
-            kontakt.szuruburu@gmail.com
-          </span>
-          <a href="https://www.instagram.com/drapaki_szuruburu/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
             <span>
-              drapaki_szuruburu
+              kontakt.szuruburu@gmail.com
             </span>
-          </a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/drapaki_szuruburu/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+              <span>
+                drapaki_szuruburu
+              </span>
+            </a>
+          </div>
         </div>
         <div class="logo-footer flex-item">
           <a href="index.html">
