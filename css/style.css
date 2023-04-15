@@ -726,11 +726,13 @@ textarea {
 
   .info-product {
     position: relative;
-    top: -600px;
+    top: 0px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 50px;
-    transition: 1s;
+    transition: 0.5s;
+    height: 0px;
+    overflow: hidden;
   }
 
   div[class*="underline"]{
@@ -765,7 +767,7 @@ textarea {
 /* Info-modal */
 
 .info-modal-in {
-  top: 0px;
+  height: auto;
 }
 
 .info-modal-out {

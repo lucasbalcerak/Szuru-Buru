@@ -6,7 +6,7 @@ $(document).ready(function() {
                 $('.info-product').show();
                 setTimeout(function() {
                     $('.info-product').addClass('info-modal-in');  
-                }, 100)
+                }, 50)
                 setTimeout(function() {
                     $('.info-product').removeClass('none');  
                 }, 200)
