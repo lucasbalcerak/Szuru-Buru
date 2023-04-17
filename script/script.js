@@ -2,14 +2,12 @@ $(document).ready(function() {
     
     if($(window).width() < 576)
     {
-        $(window).resize(function(){location.reload();});
         $('.links').addClass('none');
         $('.logo-footer').addClass('display-none');
 
         $('#ewadiv').css('height', 'auto');
         $('#lukaszdiv').css('height', 'auto');
     } else {
-        $(window).resize(function(){location.reload();});
         $('.links').removeClass('none');
         $('.logo-footer').removeClass('display-none');
 
