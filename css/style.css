@@ -11,6 +11,10 @@ html, body {
   background-color: #fafffa;
 }
 
+a {
+  color: #000;
+}
+
 .header-container, .footer-container {
   max-width: 1400px;
 }
@@ -332,7 +336,7 @@ textarea {
   font-size: 18px;
   margin-top: 6%;
   resize: none;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .btn-send {
@@ -604,6 +608,10 @@ textarea {
     padding: 7px;
   }
 
+  .links ul li a:hover {
+    color: #000;
+  }
+
   #hamburger-menu-close {
     display: block;
     width: 150px;
@@ -860,4 +868,14 @@ textarea {
 .none {
   z-index: -1;
   opacity: 0;
+}
+
+.btn-send-mobile{
+  border: 2px solid #FFAC1E;
+  border-radius: 0%;
+}
+
+.btn-send-mobile:hover {
+  color: #000;
+  border: 2px solid #FFAC1E;
 }
