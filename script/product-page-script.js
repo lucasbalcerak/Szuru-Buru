@@ -3,15 +3,18 @@ $(document).ready(function() {
     if($(window).width() < 576) {
         $('#info-icon').on('click', function(){
             if($('.info-product').is(":hidden")){
+                $('info-product').removeClass('info-modal-out');
                 $('.info-product').show();
                 setTimeout(function() {
                     $('.info-product').addClass('info-modal-in');  
                 }, 50)
-                setTimeout(function() {
-                    $('.info-product').removeClass('none');  
-                }, 200)
+                
             } else {
-                $('.info-product').hide();
+                $('.info-product').removeClass('info-modal-in');
+                $('.info-product').addClass('info-modal-out');
+                setTimeout(function() {
+                    $('.info-product').hide();
+                }, 900)
             }
         })
     } else {
