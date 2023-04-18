@@ -1,0 +1,153 @@
+// MEDIA
+@mixin devices ($breakpoint) {
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 680px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 481px) {
+            @content
+        }
+    }
+}
+
+// VARIABLES
+// fonty 
+$fontFamilyHeader: 'Kosugi Maru', sans-serif;
+$fontFamilyText: 'Varela Round', sans-serif;
+
+// colors
+$colorMain: #FFAC1E;
+$colorBackground: #fafffa;
+$colorText: #000;
+
+// GLOBALNE 
+
+* {
+    box-sizing: border-box;
+    background-color: $colorBackground;
+    font-family: $fontFamilyText;
+    margin: 0 auto;
+}
+
+.display-none {
+    display: none;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+// FLEX-BOX
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    margin: 0;
+    padding: 0;
+}
+
+// HEADER
+
+header {
+    height: 66px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include devices(mobile) {
+        background-color: $colorMain;
+    }
+}
+
+nav {
+    height: 66px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include devices(mobile) {
+        align-items: normal;
+    }
+}
+
+.logo {
+    width: 250px;
+    height: 100%;
+    text-align: center;
+
+    a {
+        display: block;
+        height: 100%;
+        background-color: $colorMain;
+
+        img {
+        height: 100%;
+        background-color: $colorMain;
+        }
+    }
+}
+
+#hamburger-menu {
+    display: none;
+    width: 70px;
+    font-size: 24px;
+    align-items: center;
+    background-color: $colorMain;
+
+    @include devices(mobile) {
+        display: flex;
+    }
+
+    i {
+        cursor: pointer;
+        background-color: $colorMain;
+    }
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+
+    @include devices(mobile){
+        position: absolute;
+        right: 0px;
+        top: 67px;
+        width: 0;
+        overflow: hidden;
+        transition: 1s;
+    }
+
+    li {
+        display: inline-block;
+
+        @include devices(mobile){
+            height: auto;            
+        }
+    }
+
+    a {
+        color: $colorText;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        padding: 0px 15px 5px 15px;
+
+        &:hover {
+            color: $colorMain;
+            border-bottom: 2px solid $colorMain;
+        }
+
+        @include devices(mobile) {
+            display: block;
+            text-align: center;
+            width: 200px;
+            padding: 10px 0;
+            border-bottom: 2px solid $colorMain;
+    }
+
+    }
+}
+
