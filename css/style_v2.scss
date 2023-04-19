@@ -17,27 +17,43 @@
 // fonty 
 $fontFamilyHeader: 'Kosugi Maru', sans-serif;
 $fontFamilyText: 'Varela Round', sans-serif;
+$containerWidth: 1400px;
+$headerFooterHeight: 66px;
+$marginToContainer: calc((100vw - 1400px)/2);
 
 // colors
 $colorMain: #FFAC1E;
 $colorBackground: #fafffa;
 $colorText: #000;
 
-// GLOBALNE 
+// GLOBAL
 
 * {
     box-sizing: border-box;
-    background-color: $colorBackground;
     font-family: $fontFamilyText;
     margin: 0 auto;
 }
 
-.display-none {
-    display: none;
+.container {
+    max-width: $containerWidth;
 }
 
-.container {
-    max-width: 1400px;
+.line {
+    background-color: $colorMain;
+    height: 4px;
+    overflow: hidden;
+
+    @include devices(mobile) {
+        display: none;
+    }
+}
+
+.margin-left {
+    margin-left: $marginToContainer;
+}
+
+.margin-right {
+    margin-right: $marginToContainer;
 }
 
 // FLEX-BOX
@@ -53,18 +69,20 @@ $colorText: #000;
 
 // HEADER
 
+// Logo with navbar
+
 header {
-    height: 66px;
+    height: $headerFooterHeight;
     align-items: center;
     justify-content: space-between;
 
     @include devices(mobile) {
         background-color: $colorMain;
-    }
+        }
 }
 
 nav {
-    height: 66px;
+    height: $headerFooterHeight;
     align-items: center;
     justify-content: space-between;
 
@@ -114,7 +132,7 @@ nav {
     @include devices(mobile){
         position: absolute;
         right: 0px;
-        top: 67px;
+        top: $headerFooterHeight;
         width: 0;
         overflow: hidden;
         transition: 1s;
@@ -151,3 +169,52 @@ nav {
     }
 }
 
+
+// Footer
+
+footer {
+    justify-content: space-between;
+    padding-left: 30px;
+
+    @include devices(mobile){
+        flex-direction: column;
+        justify-content: center;
+        height: $headerFooterHeight;
+        background-color: $colorMain;
+        padding: 0;
+    }
+
+    section {
+        gap: 50px;
+
+        @include devices(mobile) {
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    div, a {
+        display: inline-block;
+        color: $colorText;
+        text-decoration: none;
+
+        p {
+            display: inline;
+            line-height: $headerFooterHeight;
+
+            @include devices(mobile){
+                line-height: normal;
+            }
+        }
+    }
+
+    img {
+        height: $headerFooterHeight;
+        background-color: $colorMain;
+
+        @include devices(mobile) {
+            display: none;
+        }
+    }
+}

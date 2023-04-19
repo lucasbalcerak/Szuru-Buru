@@ -1,16 +1,30 @@
 * {
   box-sizing: border-box;
-  background-color: #fafffa;
   font-family: "Varela Round", sans-serif;
   margin: 0 auto;
 }
 
-.display-none {
-  display: none;
-}
-
 .container {
   max-width: 1400px;
+}
+
+.line {
+  background-color: #FFAC1E;
+  height: 4px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 481px) {
+  .line {
+    display: none;
+  }
+}
+
+.margin-left {
+  margin-left: calc((100vw - 1400px) / 2);
+}
+
+.margin-right {
+  margin-right: calc((100vw - 1400px) / 2);
 }
 
 .flex-container {
@@ -84,7 +98,7 @@ nav {
   .links {
     position: absolute;
     right: 0px;
-    top: 67px;
+    top: 66px;
     width: 0;
     overflow: hidden;
     transition: 1s;
@@ -116,5 +130,52 @@ nav {
     width: 200px;
     padding: 10px 0;
     border-bottom: 2px solid #FFAC1E;
+  }
+}
+
+footer {
+  justify-content: space-between;
+  padding-left: 30px;
+}
+@media only screen and (max-width: 481px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    height: 66px;
+    background-color: #FFAC1E;
+    padding: 0;
+  }
+}
+footer section {
+  gap: 50px;
+}
+@media only screen and (max-width: 481px) {
+  footer section {
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+footer div, footer a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+footer div p, footer a p {
+  display: inline;
+  line-height: 66px;
+}
+@media only screen and (max-width: 481px) {
+  footer div p, footer a p {
+    line-height: normal;
+  }
+}
+footer img {
+  height: 66px;
+  background-color: #FFAC1E;
+}
+@media only screen and (max-width: 481px) {
+  footer img {
+    display: none;
   }
 }/*# sourceMappingURL=style_v2.css.map */
