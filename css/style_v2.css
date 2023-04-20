@@ -11,7 +11,6 @@
 .line {
   background-color: #FFAC1E;
   height: 4px;
-  overflow: hidden;
 }
 @media only screen and (max-width: 481px) {
   .line {
@@ -22,9 +21,19 @@
 .margin-left {
   margin-left: calc((100vw - 1400px) / 2);
 }
+@media screen and (max-width: 1400px) {
+  .margin-left {
+    margin-left: 0;
+  }
+}
 
 .margin-right {
   margin-right: calc((100vw - 1400px) / 2);
+}
+@media screen and (max-width: 1400px) {
+  .margin-right {
+    margin-right: 0;
+  }
 }
 
 .flex-container {
@@ -156,17 +165,17 @@ footer section {
     justify-content: center;
   }
 }
-footer div, footer a {
+footer a {
   display: inline-block;
   color: #000;
   text-decoration: none;
 }
-footer div p, footer a p {
+footer a p {
   display: inline;
   line-height: 66px;
 }
 @media only screen and (max-width: 481px) {
-  footer div p, footer a p {
+  footer a p {
     line-height: normal;
   }
 }

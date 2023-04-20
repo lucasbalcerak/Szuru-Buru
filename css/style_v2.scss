@@ -11,6 +11,12 @@
             @content
         }
     }
+
+    @if $breakpoint == desktop {
+        @media screen and (max-width: 1400px) {
+            @content
+        }
+    }
 }
 
 // VARIABLES
@@ -41,7 +47,6 @@ $colorText: #000;
 .line {
     background-color: $colorMain;
     height: 4px;
-    overflow: hidden;
 
     @include devices(mobile) {
         display: none;
@@ -50,10 +55,18 @@ $colorText: #000;
 
 .margin-left {
     margin-left: $marginToContainer;
+
+    @include devices(desktop){
+        margin-left: 0;
+    }
 }
 
 .margin-right {
     margin-right: $marginToContainer;
+
+    @include devices(desktop){
+        margin-right: 0;
+    }
 }
 
 // FLEX-BOX
@@ -194,7 +207,7 @@ footer {
         }
     }
 
-    div, a {
+    a {
         display: inline-block;
         color: $colorText;
         text-decoration: none;
