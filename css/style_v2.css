@@ -8,6 +8,10 @@
   max-width: 1400px;
 }
 
+.container-mini {
+  max-width: 1000px;
+}
+
 .line {
   background-color: #FFAC1E;
   height: 4px;
@@ -43,6 +47,22 @@
 .flex-item {
   margin: 0;
   padding: 0;
+}
+
+.flex-right {
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 481px) {
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .flex-column {
+    flex-direction: column;
+  }
 }
 
 header {
@@ -189,27 +209,42 @@ footer img {
   }
 }
 
+main {
+  flex-direction: column;
+  gap: 100px;
+}
+main .box-shadow {
+  box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
+}
+main img {
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #FFAC1E;
+  box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 481px) {
+  main img {
+    width: 100%;
+  }
+}
+
 #first-section {
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
   gap: 2%;
-  margin: 5%;
+}
+@media screen and (max-width: 1400px) {
+  #first-section {
+    margin: 0 50px;
+  }
 }
 @media only screen and (max-width: 481px) {
   #first-section {
     flex-direction: column;
     gap: 50px;
     margin: 50px;
-  }
-}
-#first-section img {
-  width: 30%;
-  border: 4px solid #FFAC1E;
-  box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
-}
-@media only screen and (max-width: 481px) {
-  #first-section img {
-    width: 100%;
   }
 }
 #first-section div {
@@ -262,5 +297,46 @@ footer img {
 @media only screen and (max-width: 1000px) {
   #first-section div ul {
     font-size: 1rem;
+  }
+}
+
+#third-section, #second-section {
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+}
+@media only screen and (max-width: 481px) {
+  #third-section, #second-section {
+    box-shadow: none;
+  }
+}
+#third-section div, #second-section div {
+  gap: 50px;
+  text-align: justify;
+}
+@media only screen and (max-width: 481px) {
+  #third-section div, #second-section div {
+    width: 100%;
+  }
+}
+#third-section div img, #second-section div img {
+  max-height: 300px;
+}
+#third-section div div, #second-section div div {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 60%;
+}
+@media only screen and (max-width: 481px) {
+  #third-section div div, #second-section div div {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 481px) {
+  #third-section div div p, #second-section div div p {
+    text-align: justify;
   }
 }/*# sourceMappingURL=style_v2.css.map */

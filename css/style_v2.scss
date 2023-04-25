@@ -44,6 +44,10 @@ $colorText: #000;
     max-width: $containerWidth;
 }
 
+.container-mini {
+    max-width: calc($containerWidth - 400px);
+}
+
 .line {
     background-color: $colorMain;
     height: 4px;
@@ -78,6 +82,22 @@ $colorText: #000;
 .flex-item {
     margin: 0;
     padding: 0;
+}
+
+.flex-right {
+    align-items: flex-end;
+}
+
+.flex-reverse {
+    @include devices(mobile){
+        flex-direction: column-reverse;
+    }
+}
+
+.flex-column {
+    @include devices(mobile) {
+        flex-direction: column;
+    }
 }
 
 // HEADER
@@ -233,29 +253,47 @@ footer {
 }
 
 // MAIN
-// First section
 
-#first-section {
+main {
+    flex-direction: column;
+    gap: 100px;
 
-    align-items: center;
-    justify-content: center;
-    gap: 2%;
-    margin: 5%;
+    section {
+    }
 
-    @include devices(mobile) {
-        flex-direction: column;
-        gap: 50px;
-        margin: 50px;
+    .box-shadow {
+        box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
     }
 
     img {
         width: 30%;
+        object-fit: cover;
         border: 4px solid $colorMain;
         box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
 
         @include devices(mobile) {
             width: 100%;
         }
+    }
+}
+
+// First section
+
+#first-section {
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 2%;
+
+    @include devices(desktop) {
+        margin: 0 50px;
+    }
+
+    @include devices(mobile) {
+        flex-direction: column;
+        gap: 50px;
+        margin: 50px;
     }
 
     div {
@@ -307,6 +345,56 @@ footer {
             @include devices(tablet) {
                 font-size: 1rem;
             }
+        }
+    }
+}
+
+// Second section
+
+ 
+
+// Third section
+
+#third-section, #second-section {
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+
+    @include devices(mobile) {
+        box-shadow: none;
+    }
+
+
+    div {
+        gap: 50px;
+        text-align: justify;
+
+        @include devices(mobile){
+            width: 100%;
+        }
+
+        img {
+            max-height: 300px;
+        }
+
+        div {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 10px;
+            width: 60%;
+
+            @include devices(mobile) {
+                align-items: center;
+                width: 100%;
+                text-align: center;
+            }
+
+            p {
+                @include devices(mobile) {
+                    text-align: justify;
+                }
+            }
+            
         }
     }
 }
