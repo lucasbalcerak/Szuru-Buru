@@ -40,6 +40,10 @@ $colorText: #000;
     margin: 0 auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: $containerWidth;
 }
@@ -283,6 +287,29 @@ main {
             width: 100%;
         }
     }
+
+    > a {
+        cursor: pointer;
+        position: fixed;
+        font-size: 3rem;
+        right: $marginToContainer;
+        top: calc(100vh - 200px);
+        transition: 0.5s;
+
+        @include devices(desktop) {
+            font-size: 2rem;
+            right: 10px;
+        }
+
+        @include devices(mobile) {
+            font-size: 2rem;
+            right: 10px;
+        }
+
+        i {
+            color: $colorMain;
+        }
+    } 
 }
 
 // First section
