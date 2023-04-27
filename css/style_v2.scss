@@ -13,7 +13,7 @@
     }
 
     @if $breakpoint == desktop {
-        @media screen and (max-width: 1400px) {
+        @media screen and (max-width: 1000px) {
             @content
         }
     }
@@ -95,6 +95,13 @@ $colorText: #000;
 }
 
 .flex-column {
+    @include devices(mobile) {
+        flex-direction: column;
+    }
+}
+
+.flex-column-column {
+    flex-direction: column;
     @include devices(mobile) {
         flex-direction: column;
     }
@@ -258,7 +265,8 @@ main {
     flex-direction: column;
     gap: 100px;
 
-    section {
+    @include devices(mobile) {
+        gap: 0;
     }
 
     .box-shadow {
@@ -319,7 +327,12 @@ main {
                 font-size: 1.5rem;
             }
         }
+    }
+}
 
+#first-section, #second-section {
+
+    div {
         ul {
             list-style: none;
             font-size: 1.5rem;
@@ -349,13 +362,14 @@ main {
     }
 }
 
-// Second section
 
- 
+// Second and Third Section
 
-// Third section
+#third-section {
+    margin-bottom: 50px;
+}
 
-#third-section, #second-section {
+#second-section, #third-section {
     flex-direction: column;
     gap: 50px;
     padding: 50px;
@@ -375,6 +389,10 @@ main {
 
         img {
             max-height: 300px;
+
+            @include devices(mobile) {
+                height: 400px;
+            }
         }
 
         div {
@@ -395,6 +413,58 @@ main {
                 }
             }
             
+        }
+    }
+}
+
+#second-section {
+    > i {
+        font-size: 2rem;
+        margin-bottom: -50px;
+        border: 2px solid $colorMain;
+        padding: 10px;
+        color: $colorMain;
+        box-shadow: 2px 5px 10px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    > p {
+        width: 50%;
+        padding: 15px;
+        padding-bottom: 35px;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0 auto;
+        border-bottom: solid 4px $colorMain;
+
+        @include devices(mobile) {
+            width: 100%;
+            border-bottom: none;
+        }
+    }
+
+    div {
+
+        &:nth-child(5) {
+            border-top: 4px solid $colorMain;          
+        }
+
+        ul {
+            font-size: 1rem;
+            padding-top: 50px;
+
+            @include devices(mobile) {
+                font-size: 0.8rem;
+            }
+        
+            li {
+
+                &:first-child {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+            }
+
         }
     }
 }

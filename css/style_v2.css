@@ -25,7 +25,7 @@
 .margin-left {
   margin-left: calc((100vw - 1400px) / 2);
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .margin-left {
     margin-left: 0;
   }
@@ -34,7 +34,7 @@
 .margin-right {
   margin-right: calc((100vw - 1400px) / 2);
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .margin-right {
     margin-right: 0;
   }
@@ -61,6 +61,15 @@
 
 @media only screen and (max-width: 481px) {
   .flex-column {
+    flex-direction: column;
+  }
+}
+
+.flex-column-column {
+  flex-direction: column;
+}
+@media only screen and (max-width: 481px) {
+  .flex-column-column {
     flex-direction: column;
   }
 }
@@ -213,6 +222,11 @@ main {
   flex-direction: column;
   gap: 100px;
 }
+@media only screen and (max-width: 481px) {
+  main {
+    gap: 0;
+  }
+}
 main .box-shadow {
   box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
 }
@@ -235,7 +249,7 @@ main img {
   margin-top: 100px;
   gap: 2%;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   #first-section {
     margin: 0 50px;
   }
@@ -273,16 +287,17 @@ main img {
     font-size: 1.5rem;
   }
 }
-#first-section div ul {
+
+#first-section div ul, #second-section div ul {
   list-style: none;
   font-size: 1.5rem;
   margin: 0 auto;
 }
-#first-section div ul li {
+#first-section div ul li, #second-section div ul li {
   margin: 5px;
   text-align: left;
 }
-#first-section div ul li i {
+#first-section div ul li i, #second-section div ul li i {
   border: 2px solid #FFAC1E;
   padding: 10px;
   margin-right: 5px;
@@ -290,53 +305,103 @@ main img {
   box-shadow: 2px 5px 10px -5px rgba(0, 0, 0, 0.5);
 }
 @media only screen and (max-width: 481px) {
-  #first-section div ul {
+  #first-section div ul, #second-section div ul {
     font-size: 1rem;
   }
 }
 @media only screen and (max-width: 1000px) {
-  #first-section div ul {
+  #first-section div ul, #second-section div ul {
     font-size: 1rem;
   }
 }
 
-#third-section, #second-section {
+#third-section {
+  margin-bottom: 50px;
+}
+
+#second-section, #third-section {
   flex-direction: column;
   gap: 50px;
   padding: 50px;
 }
 @media only screen and (max-width: 481px) {
-  #third-section, #second-section {
+  #second-section, #third-section {
     box-shadow: none;
   }
 }
-#third-section div, #second-section div {
+#second-section div, #third-section div {
   gap: 50px;
   text-align: justify;
 }
 @media only screen and (max-width: 481px) {
-  #third-section div, #second-section div {
+  #second-section div, #third-section div {
     width: 100%;
   }
 }
-#third-section div img, #second-section div img {
+#second-section div img, #third-section div img {
   max-height: 300px;
 }
-#third-section div div, #second-section div div {
+@media only screen and (max-width: 481px) {
+  #second-section div img, #third-section div img {
+    height: 400px;
+  }
+}
+#second-section div div, #third-section div div {
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
   width: 60%;
 }
 @media only screen and (max-width: 481px) {
-  #third-section div div, #second-section div div {
+  #second-section div div, #third-section div div {
     align-items: center;
     width: 100%;
     text-align: center;
   }
 }
 @media only screen and (max-width: 481px) {
-  #third-section div div p, #second-section div div p {
+  #second-section div div p, #third-section div div p {
     text-align: justify;
   }
+}
+
+#second-section > i {
+  font-size: 2rem;
+  margin-bottom: -50px;
+  border: 2px solid #FFAC1E;
+  padding: 10px;
+  color: #FFAC1E;
+  box-shadow: 2px 5px 10px -5px rgba(0, 0, 0, 0.5);
+}
+#second-section > p {
+  width: 50%;
+  padding: 15px;
+  padding-bottom: 35px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: solid 4px #FFAC1E;
+}
+@media only screen and (max-width: 481px) {
+  #second-section > p {
+    width: 100%;
+    border-bottom: none;
+  }
+}
+#second-section div:nth-child(5) {
+  border-top: 4px solid #FFAC1E;
+}
+#second-section div ul {
+  font-size: 1rem;
+  padding-top: 50px;
+}
+@media only screen and (max-width: 481px) {
+  #second-section div ul {
+    font-size: 0.8rem;
+  }
+}
+#second-section div ul li:first-child {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style_v2.css.map */
