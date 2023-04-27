@@ -253,6 +253,7 @@ main > a {
   right: calc((100% - 1400px) / 2);
   top: calc(100vh - 200px);
   transition: 0.5s;
+  transform: scale(0);
 }
 @media screen and (max-width: 1000px) {
   main > a {

@@ -25,9 +25,9 @@ $(document).ready(function () {
     var y = window.scrollY;
 
     if ( y > view) {
-        ikonScrollUp.css("opacity", "1");
+        ikonScrollUp.css("transform", "scale(1)");
     } else {
-        ikonScrollUp.css("opacity", "0");
+        ikonScrollUp.css("transform", "scale(0)");
     }
 
  })

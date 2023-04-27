@@ -295,6 +295,7 @@ main {
         right: $marginToContainer;
         top: calc(100vh - 200px);
         transition: 0.5s;
+        transform: scale(0);
 
         @include devices(desktop) {
             font-size: 2rem;
