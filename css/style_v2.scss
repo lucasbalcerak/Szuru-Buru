@@ -25,7 +25,7 @@ $fontFamilyHeader: 'Kosugi Maru', sans-serif;
 $fontFamilyText: 'Varela Round', sans-serif;
 $containerWidth: 1400px;
 $headerFooterHeight: 66px;
-$marginToContainer: calc((100vw - 1400px)/2);
+$marginToContainer: calc((100% - 1400px)/2);
 
 // colors
 $colorMain: #FFAC1E;
@@ -296,12 +296,14 @@ main {
 
     @include devices(desktop) {
         margin: 0 50px;
+        margin-top: 50px;
     }
 
     @include devices(mobile) {
         flex-direction: column;
         gap: 50px;
         margin: 50px;
+        margin-bottom: 0;
     }
 
     div {
@@ -367,6 +369,11 @@ main {
 
 #third-section {
     margin-bottom: 50px;
+
+    h4 {
+        font-style: italic;
+        font-weight: normal;
+    }
 }
 
 #second-section, #third-section {
@@ -388,11 +395,8 @@ main {
         }
 
         img {
-            max-height: 300px;
+            max-height: 400px;
 
-            @include devices(mobile) {
-                height: 400px;
-            }
         }
 
         div {
@@ -450,7 +454,7 @@ main {
 
         ul {
             font-size: 1rem;
-            padding-top: 50px;
+            padding-top: 40px;
 
             @include devices(mobile) {
                 font-size: 0.8rem;

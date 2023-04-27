@@ -23,7 +23,7 @@
 }
 
 .margin-left {
-  margin-left: calc((100vw - 1400px) / 2);
+  margin-left: calc((100% - 1400px) / 2);
 }
 @media screen and (max-width: 1000px) {
   .margin-left {
@@ -32,7 +32,7 @@
 }
 
 .margin-right {
-  margin-right: calc((100vw - 1400px) / 2);
+  margin-right: calc((100% - 1400px) / 2);
 }
 @media screen and (max-width: 1000px) {
   .margin-right {
@@ -252,6 +252,7 @@ main img {
 @media screen and (max-width: 1000px) {
   #first-section {
     margin: 0 50px;
+    margin-top: 50px;
   }
 }
 @media only screen and (max-width: 481px) {
@@ -259,6 +260,7 @@ main img {
     flex-direction: column;
     gap: 50px;
     margin: 50px;
+    margin-bottom: 0;
   }
 }
 #first-section div {
@@ -318,6 +320,10 @@ main img {
 #third-section {
   margin-bottom: 50px;
 }
+#third-section h4 {
+  font-style: italic;
+  font-weight: normal;
+}
 
 #second-section, #third-section {
   flex-direction: column;
@@ -339,12 +345,7 @@ main img {
   }
 }
 #second-section div img, #third-section div img {
-  max-height: 300px;
-}
-@media only screen and (max-width: 481px) {
-  #second-section div img, #third-section div img {
-    height: 400px;
-  }
+  max-height: 400px;
 }
 #second-section div div, #third-section div div {
   flex-direction: column;
@@ -393,7 +394,7 @@ main img {
 }
 #second-section div ul {
   font-size: 1rem;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 @media only screen and (max-width: 481px) {
   #second-section div ul {
