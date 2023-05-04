@@ -148,7 +148,7 @@ nav {
     width: 0;
     overflow: hidden;
     transition: 1s;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }
 .links li {
@@ -177,7 +177,6 @@ nav {
     width: 200px;
     padding: 10px 0;
     border-bottom: 2px solid #FFAC1E;
-    color: #FFAC1E;
   }
 }
 
@@ -444,6 +443,11 @@ main > a i {
 #fourth-section {
   gap: 50px;
   margin-bottom: 100px;
+}
+@media only screen and (max-width: 481px) {
+  #fourth-section {
+    margin-bottom: 50px;
+  }
 }
 #fourth-section article {
   flex-direction: column;
