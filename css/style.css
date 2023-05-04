@@ -16,6 +16,10 @@ html {
   max-width: 1000px;
 }
 
+.container-mini-x2 {
+  max-width: 600px;
+}
+
 .line {
   background-color: #FFAC1E;
   height: 4px;
@@ -144,6 +148,7 @@ nav {
     width: 0;
     overflow: hidden;
     transition: 1s;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 .links li {
@@ -172,6 +177,7 @@ nav {
     width: 200px;
     padding: 10px 0;
     border-bottom: 2px solid #FFAC1E;
+    color: #FFAC1E;
   }
 }
 
@@ -346,50 +352,50 @@ main > a i {
 }
 
 #third-section {
-  margin-bottom: 50px;
+  padding-bottom: 0px;
 }
 #third-section h4 {
   font-style: italic;
   font-weight: normal;
 }
 
-#second-section, #third-section {
+#second-section, #third-section, #fourth-section {
   flex-direction: column;
   gap: 50px;
   padding: 50px;
 }
 @media only screen and (max-width: 481px) {
-  #second-section, #third-section {
+  #second-section, #third-section, #fourth-section {
     box-shadow: none;
   }
 }
-#second-section div, #third-section div {
+#second-section div, #third-section div, #fourth-section div {
   gap: 50px;
   text-align: justify;
 }
 @media only screen and (max-width: 481px) {
-  #second-section div, #third-section div {
+  #second-section div, #third-section div, #fourth-section div {
     width: 100%;
   }
 }
-#second-section div img, #third-section div img {
+#second-section div img, #third-section div img, #fourth-section div img {
   max-height: 400px;
 }
-#second-section div div, #third-section div div {
+#second-section div div, #third-section div div, #fourth-section div div {
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
   width: 60%;
 }
 @media only screen and (max-width: 481px) {
-  #second-section div div, #third-section div div {
+  #second-section div div, #third-section div div, #fourth-section div div {
     align-items: center;
     width: 100%;
     text-align: center;
   }
 }
 @media only screen and (max-width: 481px) {
-  #second-section div div p, #third-section div div p {
+  #second-section div div p, #third-section div div p, #fourth-section div div p {
     text-align: justify;
   }
 }
@@ -433,4 +439,19 @@ main > a i {
   margin-bottom: 20px;
   text-align: center;
   font-size: 1.2rem;
+}
+
+#fourth-section {
+  gap: 50px;
+  margin-bottom: 100px;
+}
+#fourth-section article {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#fourth-section article h3 {
+  padding-bottom: 5px;
+  border-bottom: 4px solid #FFAC1E;
 }/*# sourceMappingURL=style.css.map */

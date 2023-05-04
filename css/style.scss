@@ -52,6 +52,11 @@ html {
     max-width: calc($containerWidth - 400px);
 }
 
+.container-mini-x2 {
+    max-width: calc($containerWidth - 800px);
+}
+
+
 .line {
     background-color: $colorMain;
     height: 4px;
@@ -180,6 +185,7 @@ nav {
         width: 0;
         overflow: hidden;
         transition: 1s;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     li {
@@ -208,6 +214,7 @@ nav {
             width: 200px;
             padding: 10px 0;
             border-bottom: 2px solid $colorMain;
+            color: #FFAC1E;
     }
 
     }
@@ -396,7 +403,7 @@ main {
 // Second and Third Section
 
 #third-section {
-    margin-bottom: 50px;
+    padding-bottom: 0px;
 
     h4 {
         font-style: italic;
@@ -404,7 +411,7 @@ main {
     }
 }
 
-#second-section, #third-section {
+#second-section, #third-section, #fourth-section {
     flex-direction: column;
     gap: 50px;
     padding: 50px;
@@ -497,6 +504,23 @@ main {
                 }
             }
 
+        }
+    }
+}
+
+#fourth-section {
+    gap: 50px;
+    margin-bottom: 100px;
+
+    article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        h3 {
+            padding-bottom: 5px;
+            border-bottom: 4px solid $colorMain;
         }
     }
 }

@@ -6,6 +6,9 @@ $(document).ready(function () {
     var menuLinks = $('.links');
     var counter = 1;
 
+    // FAQ
+    var faqArticleArr = $('.faq-art');
+
     hamburgerMenu.click(function (e) { 
         e.preventDefault();
         if(counter % 2 != 0){
