@@ -1,119 +1,218 @@
 <!DOCTYPE html>
-<html lang="pl" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="image/icon.png">
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- INFO -->
+    <!-- DODAĆ KEYWORDSY -->
+    <meta name="description" content="Naturalne, ręcznie robione drapaki dla konia">
+    <meta name="author" content="Łukasz Balcerak">
+    <meta name="keywords" content="">
+
+    <!-- ZEWNĘTRZNE LINKI -->
     <script src="https://kit.fontawesome.com/c645a9079e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" type="text/javascript"></script>
-    <script src="script/index-animation.js"></script>
+    <!-- Fonty -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- LOKALNE PLIKI -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/logo/icon_tab.png">
     <script src="script/script.js"></script>
+    
     <title>Szuru-Buru</title>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <header>
-      <div class="header-container flex-container" id='header'>
-        <div class="logo flex-item">
-          <a href="index.html">
-            <img src="image/Full_logo.png" alt="ikona szuru-buru">
-          </a>
-        </div>
-        <nav class="flex-item">
-          <label class="menuicon" for="hamburger">
-          <span id="hamburger-menu" class="display-none">
-            <i class="fa-solid fa-bars"></i></span>
-          </label>
-          <div class="links">
-            <ul>
-              <li id="first-link">
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="about-us.html">O nas</a>
-              </li>
-              <li>
-                <a href="product-page.html">Produkty</a>
-              </li>
-              <li>
-                <a href="contact-us.html">Kontakt</a>
-              </li>
-            </ul>
-            <span id="hamburger-menu-close" class="display-none">
-              <i class="fa-solid fa-xmark"></i>
-            </span>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="underline-top">
-    </div>
-    <div class="hero-container flex-container">
-      <div class="photo-frame-one flex-item">
-        <img class="hero-photo-one" src="image/drapaki/drapaki_1.jpg" alt="zdjęcie drapaka">
-      </div>
-      <div class="hero-text flex-item">
-        <h1>
-          Jedyne w Polsce profesjonalne drapaki dla koni
-        </h1>
-        <ul>
-          <li>
-            <i class="fa-solid fa-leaf "></i>
-            <p>
-              Ekologiczna produkcja
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-hammer"></i>
-            <p>
-              Rzemieślnicza robota
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-pen-to-square"></i>
-            <p>
-              Możliwość personalizacji
-            </p>
-          </li>
-          <li>
-            <i class="fa-solid fa-seedling"></i>
-            <p>
-              szuszone pędy sosny
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="photo-frame-two flex-item">
-        <img class="hero-photo-two" src="image/drapaki/drapaki_2.jpg" alt="zdjęcie drapaków">
-      </div>
-    </div>
-    <div class="underline-bottom">
-    </div>
-    <footer>
-      <div class="footer-container flex-container">
-        <div class="contact flex-item">
-          <div>
-            <i class="fa-solid fa-envelope"></i>
-            <span>
-              kontakt.szuruburu@gmail.com
-            </span>
-          </div>
-          <div>
-            <a href="https://www.instagram.com/drapaki_szuruburu/" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-              <span>
-                drapaki_szuruburu
-              </span>
+    
+</head>
+<body>
+    <header id="start" class="container flex-container">
+        <aside class="logo flex-item">
+            <a href="index_v2.html">
+                <img src="image/logo/Full_logo.png" alt="Ikona Szuru-Buru, koń na pomarańczowym tle">
             </a>
-          </div>
-        </div>
-        <div class="logo-footer flex-item">
-          <a href="index.html">
-            <img src="image/Full_logo.png" alt="">
-          </a>
-        </div>
-      </div>
+        </aside>
+        <nav class="flex-container flex-item">
+            <span id="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <ul class="links">
+                <li>
+                    <a href="#second-section">produkty</a>
+                </li>
+                <li>
+                    <a href="#third-section">o nas</a>
+                </li>
+                <li>
+                    <a href="#fourth-section">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="line margin-left">
+        <!-- line for desktop -->
+    </div>
+    <main class="flex-container">
+        <section id="first-section" class="container flex-container">
+            <img class="flex-item" src="image/drapaki/drapaki_1.jpg" alt="Zdjęcie drapaka dla konia">
+            <div class="flex-item flex-container">
+                <h1 class="flex-item">
+                    Jedyne profesjonalne drapaki dla koni
+                </h1>
+                <ul class="flex-item">
+                    <li>
+                        <i class="fa-solid fa-leaf "></i>
+                        Ekologiczna produkcja
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Rzemieślnicza robota
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Możliwość personalizacji
+                    </li>
+                </ul>
+            </div>
+            <img class="flex-item" src="image/drapaki/drapaki_2.jpg" alt="Zdjęcie drapaka dla konia">
+        </section>
+        <section  id="second-section" class="container-mini flex-container box-shadow">
+            <i class="fa-sharp fa-solid fa-circle-info"></i>
+            <p class="flex-item">
+                Drapaki produkujemy wyłącznie z naturalnych materiałów na zamówienie klienta i osobiście dbamy o jego wykonanie
+            </p>
+            <div class="flex-item flex-container flex-column">
+                <img src="image/drapaki/Palma.png" alt="Zdjęcie drapaka Palma">
+                <div class="flex-container">
+                    <h2 class="flex-item">Drapak "Palma"</h2>
+                    <h3 class="flex-item">290 zł</h3>
+                    <p class="flex-item">
+                        Bardziej wytrzymały idealnie sprawdza się przy koniach, które testują, gryzą i bawią się nowymi rzeczami.
+                        Powierzchnia do drapania wykonana jest ze sztywnego włókna Bassina, pozyskiwanego z liści palmowych. Włosie to jest bardzo sztywne i mocno osadzone w drapaku.
+                        Konstrukcja wykonana jest z oszlifowanego drewna sosnowego.
+                    </p>
+                </div>
+             </div>
+             <div class="flex-item flex-container flex-column">
+                <img src="image/drapaki/Kokos.png" alt="Zdjęcie drapaka Kokos">
+                <div class="flex-container">
+                    <h2 class="flex-item">Drapak "Kokos"</h2>
+                    <h3 class="flex-item"> 250 zł</h3>
+                    <p class="flex-item">
+                        Idealny dla koni delikatnych
+                        Powierznia do drapania wykonana jest z naturalnej maty z włókien kokosowych.
+                        Pod matą znajduje się kontrukcja, która tworzy wybrzuszoną, lepszą powierzchnie do drapania
+                        Konstrukcja wykonana jest z oszlifowanego drewna sosnowego. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex-item flex-container flex-column-column">
+                <ul class="flex-item">
+                    <li>
+                        Dodatkowe opcje:
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Tabliczka grawer (50zł)
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Malowanie impregnatem (20zł)
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Malowanie na kolor (20zł)
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Podwójny system montażu (10zł)
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Niezbędne narzedzia (10zł)
+                    </li>
+                </ul>    
+            </div>
+        </section>
+        <section id="third-section" class="container flex-container">
+            <div class="flex-item flex-container flex-column">
+                <img src="image/osoby/Łukasz.png" alt="Zdjęcie Łukasza">
+                <div class="flex-container">
+                    <h2 class="flex-item">Łukasz</h2>
+                    <h3 class="flex-item"> Umysł ściły Szuru-Buru</h3>
+                    <p class="flex-item"> 
+                    Pracy w drewnie nauczył się od ojca stolarza, który bacznie dbał o to aby syn zakochał się w pracy w drewnie i nabrał odpowiednich umiejętności. 
+                    O koniach wie tyle co nic. Pierwszy raz głaskał go mając 28 lat, zakochał się jednak w nich od pierwszego dotknięcia. Mimo obcowania z nimi przez dosyć niedługi czas stara się całym sobą chłonnąć końskie zwyczaje. Jakie było jego zdziwienie że dla koni nie ma profesjonalnych drapaków. Przecież wszystkie konie uwielbiają się drapać. Czy to nawzajem czy o ogrodzenie albo o dowolną rzecz o jaką są w stanie. Wtedy narodził się w jego głowie pomysł stworzenia pierwszego profesjonalnego drapaka dla konii przystosowanego do potrzeb jakie stawiają nam nasi czteronożni przyjaciele. Korzystając ze swojego doświadczenia wiedzy i umiejętności dołożył wszelkich starań aby stwożyć przedmiot bliski idealnemu.
+                    </p>
+                    <h4 class="flex-item">
+                    Motto: “Wytrzymałości drewna nie przeskoczysz ale możesz mu pomóc” 
+                    </h4>
+                </div>
+            </div>
+            <div class="flex-item flex-container flex-reverse">
+                <div class="flex-container flex-right">
+                    <h2 class="flex-item"> Ewa </h2>
+                    <h3 class="flex-item"> Wiedza, doświadczenie i miłość Szuru-Buru</h3>
+                    <p class="flex-item"> 
+                        Wieloletnia pasjonatka koni, właścicielka cudownego araba oraz nauczyciel jazdy końskiej. 
+                        To właśnie Ewa jest przewodnikiem Łukasza w końskim świecie. Tłumaczy, pokazuje oraz uczy naszego stolarza końskich potrzeby oraz zwyczajów. To za jej sprawą drapak wielokrotnie był przerabianny i dopracowywany. Jej świadomość niszczycielskiej siły koni była motorem napędowym do dopracowywania drapaka w najmniejszych szczegółach nic nie można było zostawić przypadkowi. 
+                    </p>
+                    <h4 class="flex-item">
+                        Motto: “Bezpieczeństwo na pierwszym miejscu”
+                    </h4>
+                </div>
+                <img src="image/osoby/Ewa.png" alt="Zdjęcie Ewy">
+            </div>
+        </section>
+        <section id="fourth-section" class="container-mini-x2 flex-container box-shadow">
+            <article class="flex-item flex-container">
+                <h3 class="flex-item faq-art">Jak zamówić drapak ?</h3>
+                <p class="faq-answer-hide">
+                    W celu zamówienia drapaka należy skontaktować się z nami mailowo albo za pomocą instagrama.
+                </p>
+            </article>
+            <article class="flex-item flex-container">
+                <h3 class="flex-item faq-art">Ile trwa produkcja drapaka ?</h3>
+                <p class="faq-answer-hide">
+                    Każdy z naszych drapaków produkowany jest ręcznie przez rzemieślnika. Czas realizacji zamówienia to maksymalnie 10 dni roboczych od zaksięgowania wpłaty.
+                    Najczęściej jest szybciej ale wyszystko zależy od ilości zamówień.
+                </p>
+            </article>
+            <!-- NASTĘPNE PYTANIE BOX -->
+            <!-- <article class="flex-item flex-container">
+                <h3 class="flex-item faq-art"></h3>
+                <p class="faq-answer-hide">
+
+                </p>
+            </article> -->
+        </section>
+        <a href="#start" id="ikonScrollUp">
+            <i class="fa-solid fa-circle-arrow-up"></i>  
+        </a>
+    </main>
+    <div class="line margin-right">
+        <!-- line for desktop -->
+    </div>
+    <footer class="container flex-container">
+        <section class="flex-container flex-item">
+            <a href="mailto: kontakt.szuruburu@gmail.com">
+                <i class="fa-solid fa fa-envelope"></i>
+                <p>
+                    kontakt.szuruburu@gmail.com
+                </p>
+            </a>
+            <a href="https://www.instagram.com/drapaki_szuruburu/"target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                <p>
+                    drapaki_szuruburu
+                </p>
+            </a>
+        </section>
+        <img src="image/logo/icon.png" alt="Ikona szuru-buru koń na pomarańczowym tle"
+        class="flex-item">
     </footer>
-  </body>
+</body>
 </html>

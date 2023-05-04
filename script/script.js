@@ -1,40 +1,36 @@
-$(document).ready(function() {
-    
-    if($(window).width() < 576)
-    {
-        $('.links').addClass('none');
-        $('.logo-footer').addClass('display-none');
+$(window).resize(function(){location.reload();})
 
-        $('#ewadiv').css('height', 'auto');
-        $('#lukaszdiv').css('height', 'auto');
+$(document).ready(function () { 
+    // Hamburger menu
+    var hamburgerMenu = $('#hamburger-menu');
+    var menuLinks = $('.links');
+    var counter = 1;
+
+    // FAQ
+    var faqArticleArr = $('.faq-art');
+
+    hamburgerMenu.click(function (e) { 
+        e.preventDefault();
+        if(counter % 2 != 0){
+            menuLinks.css('width', '200px');
+            counter++;
+        } else {
+            menuLinks.css('width', '0px');
+            counter++;
+        }
+    });
+ })
+
+ $(document).scroll(function (){
+    // Scroll-up icon
+    var ikonScrollUp = $('#ikonScrollUp')
+    var view = $('#first-section').height();
+    var y = window.scrollY;
+
+    if ( y > view) {
+        ikonScrollUp.css("transform", "scale(1)");
     } else {
-        $('.links').removeClass('none');
-        $('.logo-footer').removeClass('display-none');
-
-        var lukaszDiv = $('#lukaszdiv').height();
-        var ewaDiv = $('#ewadiv').height();
-
-        if(lukaszDiv > ewaDiv){
-            $('#ewadiv').css('height', lukaszDiv + 'px');
-        }
-        else {
-            $('#lukaszdiv').css('height', ewaDiv + "px");
-        }
+        ikonScrollUp.css("transform", "scale(0)");
     }
 
-    $('#hamburger-menu').on('click', function(){
-        $('.links').removeClass('nav-out');
-        $('.links').removeClass('none');
-        setTimeout(function() {
-            $('.links').addClass('nav-in');  
-        }, 100)
-    }) 
-
-    $('#hamburger-menu-close').on('click', function(){
-        $('.links').removeClass('nav-in');
-        $('.links').addClass('nav-out');
-        setTimeout(function() {
-            $('.links').addClass('none');  
-        }, 1000)
-    })
-});
+ })
