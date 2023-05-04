@@ -350,12 +350,45 @@ main > a i {
   }
 }
 
-#third-section {
-  padding-bottom: 0px;
+#second-section > i {
+  font-size: 2rem;
+  margin-bottom: -50px;
+  border: 2px solid #FFAC1E;
+  padding: 10px;
+  color: #FFAC1E;
+  box-shadow: 2px 5px 10px -5px rgba(0, 0, 0, 0.5);
 }
-#third-section h4 {
-  font-style: italic;
-  font-weight: normal;
+#second-section > p {
+  width: 50%;
+  padding: 15px;
+  padding-bottom: 35px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 4px solid #FFAC1E;
+}
+@media only screen and (max-width: 481px) {
+  #second-section > p {
+    width: 100%;
+    border-bottom: none;
+  }
+}
+#second-section div:nth-child(5) {
+  border-top: 4px solid #FFAC1E;
+}
+#second-section div ul {
+  font-size: 1rem;
+  padding-top: 40px;
+}
+@media only screen and (max-width: 481px) {
+  #second-section div ul {
+    font-size: 0.8rem;
+  }
+}
+#second-section div ul li:first-child {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 #second-section, #third-section, #fourth-section {
@@ -399,45 +432,12 @@ main > a i {
   }
 }
 
-#second-section > i {
-  font-size: 2rem;
-  margin-bottom: -50px;
-  border: 2px solid #FFAC1E;
-  padding: 10px;
-  color: #FFAC1E;
-  box-shadow: 2px 5px 10px -5px rgba(0, 0, 0, 0.5);
+#third-section {
+  padding-bottom: 0px;
 }
-#second-section > p {
-  width: 50%;
-  padding: 15px;
-  padding-bottom: 35px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 0 auto;
-  border-bottom: solid 4px #FFAC1E;
-}
-@media only screen and (max-width: 481px) {
-  #second-section > p {
-    width: 100%;
-    border-bottom: none;
-  }
-}
-#second-section div:nth-child(5) {
-  border-top: 4px solid #FFAC1E;
-}
-#second-section div ul {
-  font-size: 1rem;
-  padding-top: 40px;
-}
-@media only screen and (max-width: 481px) {
-  #second-section div ul {
-    font-size: 0.8rem;
-  }
-}
-#second-section div ul li:first-child {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 1.2rem;
+#third-section h4 {
+  font-style: italic;
+  font-weight: normal;
 }
 
 #fourth-section {

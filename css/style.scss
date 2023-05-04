@@ -20,12 +20,13 @@
 }
 
 // VARIABLES
-// fonty 
+
 $fontFamilyHeader: 'Kosugi Maru', sans-serif;
 $fontFamilyText: 'Varela Round', sans-serif;
 $containerWidth: 1400px;
 $headerFooterHeight: 66px;
 $marginToContainer: calc((100% - 1400px)/2);
+$border: 4px solid #FFAC1E;
 
 // colors
 $colorMain: #FFAC1E;
@@ -116,9 +117,7 @@ html {
     }
 }
 
-// HEADER
-
-// Logo with navbar
+// HEADER                                                                                                                                                                                                                                                                                                                                         
 
 header {
     height: $headerFooterHeight;
@@ -269,7 +268,7 @@ footer {
     }
 }
 
-// MAIN
+// Main
 
 main {
     flex-direction: column;
@@ -286,7 +285,7 @@ main {
     img {
         width: 30%;
         object-fit: cover;
-        border: 4px solid $colorMain;
+        border: $border;
         box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
 
         @include devices(mobile) {
@@ -319,7 +318,7 @@ main {
     } 
 }
 
-// First section
+// Sections
 
 #first-section {
 
@@ -398,15 +397,55 @@ main {
     }
 }
 
+#second-section {
+    > i {
+        font-size: 2rem;
+        margin-bottom: -50px;
+        border: 2px solid $colorMain;
+        padding: 10px;
+        color: $colorMain;
+        box-shadow: 2px 5px 10px -5px rgba(0, 0, 0, 0.5);
+    }
 
-// Second and Third Section
+    > p {
+        width: 50%;
+        padding: 15px;
+        padding-bottom: 35px;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0 auto;
+        border-bottom: $border;
 
-#third-section {
-    padding-bottom: 0px;
+        @include devices(mobile) {
+            width: 100%;
+            border-bottom: none;
+        }
+    }
 
-    h4 {
-        font-style: italic;
-        font-weight: normal;
+    div {
+
+        &:nth-child(5) {
+            border-top: $border;          
+        }
+
+        ul {
+            font-size: 1rem;
+            padding-top: 40px;
+
+            @include devices(mobile) {
+                font-size: 0.8rem;
+            }
+        
+            li {
+
+                &:first-child {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
     }
 }
 
@@ -455,55 +494,12 @@ main {
     }
 }
 
-#second-section {
-    > i {
-        font-size: 2rem;
-        margin-bottom: -50px;
-        border: 2px solid $colorMain;
-        padding: 10px;
-        color: $colorMain;
-        box-shadow: 2px 5px 10px -5px rgba(0, 0, 0, 0.5);
-    }
+#third-section {
+    padding-bottom: 0px;
 
-    > p {
-        width: 50%;
-        padding: 15px;
-        padding-bottom: 35px;
-        font-size: 1.2rem;
-        text-align: center;
-        margin: 0 auto;
-        border-bottom: solid 4px $colorMain;
-
-        @include devices(mobile) {
-            width: 100%;
-            border-bottom: none;
-        }
-    }
-
-    div {
-
-        &:nth-child(5) {
-            border-top: 4px solid $colorMain;          
-        }
-
-        ul {
-            font-size: 1rem;
-            padding-top: 40px;
-
-            @include devices(mobile) {
-                font-size: 0.8rem;
-            }
-        
-            li {
-
-                &:first-child {
-                    margin-bottom: 20px;
-                    text-align: center;
-                    font-size: 1.2rem;
-                }
-            }
-
-        }
+    h4 {
+        font-style: italic;
+        font-weight: normal;
     }
 }
 
@@ -523,7 +519,7 @@ main {
 
         h3 {
             padding-bottom: 5px;
-            border-bottom: 4px solid $colorMain;
+            border-bottom: $border;
         }
     }
 }
