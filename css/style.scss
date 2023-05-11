@@ -284,6 +284,7 @@ main {
 
     img {
         width: 30%;
+        height: 400px;
         object-fit: cover;
         border: $border;
         box-shadow: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
@@ -337,6 +338,12 @@ main {
         gap: 50px;
         margin: 50px;
         margin-bottom: 0;
+    }
+
+    img {
+        @include devices(mobile) {
+            height: auto;
+        }
     }
 
     div {

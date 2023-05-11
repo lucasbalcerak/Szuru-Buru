@@ -241,6 +241,7 @@ main .box-shadow {
 }
 main img {
   width: 30%;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 4px solid #FFAC1E;
@@ -294,6 +295,11 @@ main > a i {
     gap: 50px;
     margin: 50px;
     margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 481px) {
+  #first-section img {
+    height: auto;
   }
 }
 #first-section div {
